@@ -4,6 +4,36 @@
 }
 
 body{
-    background-color: rgb(56, 63, 61);
+    background-color:aliceblue;
+}
+
+.selectors{
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed #7B61FF;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.selectors div select{
+    margin: 10px;
+    width: 140px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.first{
+    color: grey;
+}
+
+.second{
+    color: black;
+}
+
+.third{
+    color: grey;
+    background-color: transparent;
 }
 
