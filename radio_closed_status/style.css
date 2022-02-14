@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     border: 1px dashed #7B61FF;
     width: fit-content;
+    max-width: 500px;
     border-radius: 5px;
     padding: 5px;
     height: fit-content;
@@ -40,7 +41,7 @@ body{
     margin-left: 10px;
 }
 
-input[type='radio']:after {
+/* input[type='radio']:after {
     width: 20px;
     height: 20px;
     border-radius: 15px;
@@ -66,5 +67,29 @@ input[type='radio']:checked:after {
         display: inline-block;
         visibility: visible;
         border: 2px solid white;
+} */
+
+
+.block2{
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: raw;
+    border: 1px dashed #7B61FF;
+    width: fit-content;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 5px;
+    height: fit-content;
 }
 
+.thingy{
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.pupa{
+    margin-top:5ch;
+}
