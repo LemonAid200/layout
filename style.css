@@ -7,7 +7,7 @@ body{
     background-color:aliceblue;
 }
 
-.selectors{
+.block{
     margin: 15px;
     border-radius: 5px;
     display: flex;
@@ -15,25 +15,68 @@ body{
     border: 1px dashed #7B61FF;
     width: fit-content;
     border-radius: 5px;
+    padding: 5px;
+    height: fit-content;
 }
 
-.selectors div select{
+
+
+.blocks div input{
     margin: 10px;
     width: 140px;
     border-radius: 5px;
     border-color: transparent;
 }
 
-.first{
+.blocks div select{
+    margin: 10px;
+    width: 140px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.select_first{
     color: grey;
 }
 
-.second{
+.select_second{
     color: black;
 }
 
-.third{
+.select_third{
     color: grey;
     background-color: transparent;
+}
+
+
+
+.input_first ::placeholder{
+    color: grey;
+}
+
+.input_second::placeholder {
+    color: black;
+}
+
+
+.input_third{
+    color: grey;
+    background-color: transparent;
+}
+
+
+.blocks{
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks div button{
+    margin: 5px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
 }
 
