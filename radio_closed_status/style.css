@@ -1,0 +1,95 @@
+
+body{
+    background-color: bisque;
+}
+
+
+
+.block{
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed #7B61FF;
+    width: fit-content;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 5px;
+    height: fit-content;
+}
+
+.blocks{
+    display: flex;
+    flex-direction: row;
+}
+
+.radio{
+    margin: 7px;
+    
+}
+
+.radios{
+    margin: 7px;
+    
+}
+
+.radio label{
+    margin-left: 10px;
+}
+
+.radios label{
+    margin-left: 10px;
+}
+
+/* input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+        width:20px;
+        height: 20px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: pink;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+} */
+
+
+.block2{
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: raw;
+    border: 1px dashed #7B61FF;
+    width: fit-content;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 5px;
+    height: fit-content;
+}
+
+.thingy{
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.pupa{
+    margin-top:5ch;
+}
