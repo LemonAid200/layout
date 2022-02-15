@@ -1,13 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color:aliceblue;
+body {
+    background-color: #E5E5E5;
 }
 
-.block{
+.block {
     margin: 15px;
     border-radius: 5px;
     display: flex;
@@ -21,36 +23,36 @@ body{
 
 
 
-.blocks div input{
+.blocks div input {
     margin: 10px;
     width: 140px;
     border-radius: 5px;
     border-color: transparent;
 }
 
-.blocks div select{
+.blocks div select {
     margin: 10px;
     width: 140px;
     border-radius: 5px;
     border-color: transparent;
 }
 
-.select_first{
+.select_first {
     color: grey;
 }
 
-.select_second{
+.select_second {
     color: black;
 }
 
-.select_third{
+.select_third {
     color: grey;
     background-color: transparent;
 }
 
 
 
-.input_first ::placeholder{
+.input_first ::placeholder {
     color: grey;
 }
 
@@ -59,56 +61,66 @@ body{
 }
 
 
-.input_third{
+.input_third {
     color: grey;
     background-color: transparent;
 }
 
 
-.blocks{
+.blocks {
     display: flex;
     flex-direction: row;
 }
 
-.blocks div button{
+.blocks div button {
     margin: 5px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
     padding-right: 50px;
 }
 
-.buttons button{
+.buttons button {
     border: none;
     border-radius: 6px;
-    margin: 0 auto;
     text-align: center;
+    margin-top: 20px;
 }
 
 .button_1 {
     background-color: rgba(226, 255, 18, 1);
     padding: 9px 24px 11px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+    width: 90px;
+    height: 44px;
 }
 
 
 .button_2 {
     background-color: white;
     padding: 9px 24px 11px;
+    width: 90px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
+
 .button_3 {
     background-color: white;
     padding: 9px 24px 11px;
     display: flex;
     flex-direction: row;
-}  
+    width: 116px;
+    height: 44px;
+}
 
-.button_3 p{
+.button_3 p {
     margin-top: 5px;
     margin-left: 3px;
 }
@@ -117,40 +129,101 @@ body{
     background-color: rgba(240, 255, 135, 1);
     padding: 9px 24px 11px;
     color: grey;
+    width: 90px;
+    height: 44px;
 }
-.button_5 {    
+
+.button_5 {
     background-color: black;
     color: azure;
     padding: 9px 24px 11px;
+    width: 90px;
+    height: 44px;
 }
+
 .button_6 {
-    
+    width: 69px;
+    height: 32px;
+    background-color: white;
+
 }
+
 .button_7 {
+    width: 69px;
+    height: 32px;
+    color: white;
+    background-color: black;
 }
+
 .button_8 {
     align-items: flex-start;
     padding: 9px 24px 11px;
-    background-color: black;
+    background-color: rgba(226, 255, 18, 1);
+    color: aliceblue;
+    width: 90px;
+    height: 44px;
 }
+
 .button_9 {
+    background: rgba(234, 234, 234, 1);
+    padding: 9px 24px 11px;
+    width: 90px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
+
 .button_10 {
+    background-color: transparent;
+    padding: 9px 24px 11px;
+    display: flex;
+    flex-direction: row;
+    width: 116px;
+    height: 44px;
 }
+
+.button_10 p {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+
 .button_11 {
+    background: rgba(32, 32, 32, 1);
+
+    color: aliceblue;
+    width: 90px;
+    height: 44px;
+
 }
+
+
+
+
 .button_12 {
+    width: 69px;
+    height: 32px;
+    background: rgba(234, 234, 234, 1);
+
 }
+
 .button_13 {
+    width: 69px;
+    height: 32px;
+    background: rgba(32, 32, 32, 1);
+    color: aliceblue;
 }
+
 .button_14 {
+    width: 69px;
+    height: 32px;
+    background-color: rgba(226, 255, 18, 1);
 }
+
 .button_15 {
-}
+    width: 69px;
+    height: 32px;
+    background: rgba(219, 248, 18, 1);
 
-
-
-.material-icons{
-    
-    
 }
