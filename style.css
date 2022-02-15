@@ -80,3 +80,72 @@ body{
     padding-right: 50px;
 }
 
+.buttons button{
+    border: none;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button_1 {
+    background-color: rgba(226, 255, 18, 1);
+    padding: 9px 24px 11px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.button_2 {
+    background-color: white;
+    padding: 9px 24px 11px;
+}
+.button_3 {
+    background-color: white;
+    padding: 9px 24px 11px;
+    display: flex;
+    flex-direction: row;
+}  
+
+.button_4 {
+    background-color: rgba(240, 255, 135, 1);
+    padding: 9px 24px 11px;
+    color: grey;
+}
+.button_5 {    
+    background-color: black;
+    color: azure;
+    padding: 9px 24px 11px;
+}
+.button_6 {
+    
+}
+.button_7 {
+}
+.button_8 {
+    align-items: flex-start;
+    padding: 9px 24px 11px;
+    background-color: black;
+}
+.button_9 {
+}
+.button_10 {
+}
+.button_11 {
+}
+.button_12 {
+}
+.button_13 {
+}
+.button_14 {
+}
+.button_15 {
+}
+
+
+
+.material-icons{
+    
+    
+}
