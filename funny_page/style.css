@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(228, 226, 225);
+}
+
+
+
+.block{
+    margin: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 90vh;
+    border: 1px dashed #7B61FF;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40px);
+    
+}
+
+
+
+.close{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    margin: 5px;
+    
+    
+    transition: ease-out 1s ease 0s;
+    
+}
+
+
+
+.close:hover{
+    transform: rotate(90deg);
+    background-color: #7B61FF;
+    transform: scale(1.5);
+}
+
+.close_white{
+    background-color: rgba(243, 243, 243, 1);
+}
+.close_grey{
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.close:after{    
+    content: "\00d7"; /* This will render the 'X' */
+    font-size: 40px;
+    position: relative;
+    left: 9px;
+    top: -3px;
+    
+}
