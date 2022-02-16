@@ -27,16 +27,14 @@ body{
     margin: 5px;
     
     
-    transition: ease-out 1s ease 0s;
     
 }
 
 
 
 .close:hover{
-    transform: rotate(90deg);
+    transform: rotate(180deg) scale(1.5);
     background-color: #7B61FF;
-    transform: scale(1.5);
 }
 
 .close_white{
