@@ -3,6 +3,10 @@ body{
     background-color: rgb(228, 226, 225);
 }
 
+:root{
+    --purple: #7B61FF;
+
+}
 
 
 .block{
@@ -10,7 +14,7 @@ body{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    border: 1px dashed #7B61FF;
+    border: 1px dashed var(--purple);
     width: fit-content;
     max-width: 500px;
     border-radius: 5px;
@@ -25,36 +29,26 @@ body{
 }
 
 .radio{
-    margin: 7px;
-    
-}
-
-.radios{
-    margin: 7px;
-    
+    margin: 7px;    
 }
 
 .radio label{
     margin-left: 10px;
 }
 
-.radios label{
-    margin-left: 10px;
-}
-
-
-
 .block2{
     margin: 15px;
     border-radius: 5px;
     display: flex;
     flex-direction: raw;
-    border: 1px dashed #7B61FF;
+    border: 1px dashed var(--purple);
     width: fit-content;
     max-width: 500px;
     border-radius: 5px;
     padding: 5px;
     height: fit-content;
+    align-items: center;
+    
 }
 
 .thingy{
@@ -64,9 +58,7 @@ body{
     padding: 3px;
 }
 
-.pupa{
-    margin-top:5ch;
-}
+
 
 .close{
     border-radius: 50%;
@@ -74,12 +66,10 @@ body{
     width: 40px;
     align-content: center;
     margin: 5px;
-    transition: all 0.4s ease 0s;
+    
 }
 
-.close:hover{
-    transform: rotate(90deg);
-}
+
 
 
 .close_white{
@@ -98,52 +88,49 @@ body{
 }
 
 
-.ellips{
-    width: 200px;
-    height: 100px;
+.closeV{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
     border-radius: 50%;
-    background-color: red;
-    transition: all 1s ease 0s;
-}
-.block_ellips{
-    display: inline-block;
-    transition: all 1s ease 0s;
-}
-.ellips:hover{
-    transform:rotate(90deg);
+    position: relative;
 }
 
-
-
-
-
-
-.block_ellips:hover{
-    transform: rotate(90deg);
+.closeV::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: black;
+    top: 8px;
+    right: 19px;
+    border-radius: 2px;
+    transform: rotate(45deg);
 }
 
-.in_circle_magic {    
-    display: grid;
-    place-items: center;
-
-    transition: all 1s ease 0s;
+.closeV::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: black;
+    top: 8px;
+    right: 19px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    
 }
 
-
-
-.in_circle_magic:hover{
-    transform: scale(-1,-1);
+.closeV:hover{
+    background-color:  rgba(243, 243, 243, 1);
 }
 
-
-.square{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    background-color: green;
-    transition: all 1s ease 0s;
-}
-
-.square:hover{
-    transform: scale(-1, -1);
+.status{
+    display: flex;
+    background-color: black;
+    border-radius: 2px;
+    color: white;
+    align-items: center;
 }

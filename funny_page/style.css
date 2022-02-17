@@ -2,19 +2,33 @@ body{
     background-color: rgb(228, 226, 225);
 }
 
-
+.blocks{
+    display: flex;
+    flex-direction: row;
+   
+}
 
 .block{
     margin: 15px;
     border-radius: 5px;
     box-sizing: border-box;
-    height: 90vh;
+    height: fit-content;
     border: 1px dashed #7B61FF;
     border-radius: 5px;
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 40px);
     
+}
+.block_square{
+    width: fit-content;
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed #7B61FF;
+    width: fit-content;
+    padding: 5px;
 }
 
 
@@ -54,4 +68,55 @@ body{
     left: 9px;
     top: -3px;
     
+}
+
+
+.ellips{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    transition: all 1s ease 0s;
+}
+.block_ellips{
+    display: inline-block;
+    transition: all 1s ease 0s;
+}
+.ellips:hover{
+    transform:rotate(90deg);
+}
+
+
+
+
+
+
+.block_ellips:hover{
+    transform: rotate(90deg);
+}
+
+.in_circle_magic {    
+    display: grid;
+    place-items: center;
+
+    transition: all 1s ease 0s;
+}
+
+
+
+.in_circle_magic:hover{
+    transform: scale(-1,-1);
+}
+
+
+.square{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: all 1s ease 0s;
+}
+
+.square:hover{
+    transform: scale(-1, -1);
 }
