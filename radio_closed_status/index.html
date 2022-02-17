@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,11 +25,34 @@
             <div class="closeV close_grey"></div>
         </div>
 
-        <div class="block">
+        <div class="block status_block">
             <div class="status">
-                <div class="status_text">
-                    на модерации
-                </div>
+                <div class="status_ellipse" style="background-color: var(--yellow);"></div>
+                <div class="status_text"> запущена</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--grey);"></div>
+                <div class="status_text"> черновик</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--yellow);"></div>
+                <div class="status_text"> на модерации</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--yellow);"></div>
+                <div class="status_text"> завершена</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--yellow);"></div>
+                <div class="status_text"> на паузе</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--red);"></div>
+                <div class="status_text"> отклонена</div>                
+            </div>
+            <div class="status">
+                <div class="status_ellipse" style="background-color: var(--grey);"></div>
+                <div class="status_text"> аккаунт не привязан</div>                
             </div>
         </div>
     </div>
