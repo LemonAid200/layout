@@ -20,6 +20,20 @@ body{
     grid-template-columns: repeat(auto-fill, 40px);
     
 }
+
+.block2{
+    margin: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: fit-content;
+    border: 1px dashed #7B61FF;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    width: fit-content;
+}
+
+
 .block_square{
     width: fit-content;
     margin: 15px;
@@ -119,4 +133,17 @@ body{
 
 .square:hover{
     transform: scale(-1, -1);
+}
+
+
+.msg{
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.msg::after{
+    
 }
