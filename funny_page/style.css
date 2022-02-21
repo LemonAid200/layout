@@ -136,14 +136,5 @@ body{
 }
 
 
-.msg{
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
-    border-radius: 3px;
-    margin: 5px;
-}
 
-.msg::after{
-    
-}
+
