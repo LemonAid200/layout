@@ -24,7 +24,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     height: fit-content;
-    width: fit-content;
+    width: 400px;
     border: 1px dashed #7B61FF;
     border-radius: 5px;
     padding: 5px;
@@ -97,18 +97,14 @@
 }
 
 
-.targetted{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
 
-}
 
 .block header{
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
+    margin: 5px;
 }
 
 .button_block{
@@ -119,9 +115,40 @@
     background: var(--msg_box);
     display: flex;
     align-items: center;
-    padding-right: 5px;
-    padding-left: 5px;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
+}
+
+.button_block_text{
+    padding: 7px 16px;
+}
+
+.button_block_msg{
+    padding: 8px 16px;
+}
+
+.buttons{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.targetted{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 5px;
+}
+  
+.targetted::before{
+    display: block;
+    content: '';
+    box-shadow: 0 0 9px 5px yellow;
+    position:relative;
+    top: 15px;
+    width: 90px;
+    border-radius: 50%;
+
 }
