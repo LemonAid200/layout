@@ -6,6 +6,8 @@
 :root{
     --msg_color: black;
     --msg_box: rgba(243, 243, 243, 1);
+    --targetted_background: yellow;
+    --block_border_color: #7B61FF;
 }
 
 
@@ -25,12 +27,39 @@
     box-sizing: border-box;
     height: fit-content;
     width: 400px;
-    border: 1px dashed #7B61FF;
+    border: 1px dashed var(--block_border_color);
     border-radius: 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
+    min-width: fit-content;
     
+}
+
+.block_desktop{
+    margin: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: fit-content;
+    width: 95vw;
+    border: 1px dashed var(--block_border_color);
+    border-radius: 5px;
+    padding: 5px;
+    display:box;
+    flex-direction: column;
+}
+
+.block footer{
+    color: rgba(118, 118, 118, 1);
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-left: 44px;
+    margin-bottom: 54px;
+    margin-right: 57px;
 }
 
 .msg_block{
@@ -143,12 +172,38 @@
 }
   
 .targetted::before{
+    z-index: -1;
     display: block;
     content: '';
-    box-shadow: 0 0 9px 5px yellow;
+    box-shadow: 0 0 9px 5px var(--targetted_background);
     position:relative;
-    top: 15px;
-    width: 90px;
-    border-radius: 50%;
+    top: 16px;
+    left: 10px;
+    width: 80px;
+    border-radius: 100%;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
 
 }
+
+
+.desktop{
+    width: 95vw;
+}
+
+.desktop footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+.desktop footer div{
+    align-self:flex-end;
+    justify-self: center;
+}
+
+
