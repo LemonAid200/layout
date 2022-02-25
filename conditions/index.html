@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div class="columns">
         <button class="element button_start_add">Запустить рекламу</button>
@@ -22,9 +25,38 @@
         <button class="element small_button grey_button">Текст</button>
         <button class="element small_button black_button">Текст</button>
         <button class="element small_button yellow_button">Текст</button>
-        
+
+        <label for="myRadioId" class="radio">
+            <input type="radio" name="myRadioField" id="myRadioId" class="radio_input">
+            <div class="radio_radio"></div>
+            Текст
+        </label>
+
         <div class="closeV"></div>
-        
+
+        <div class="pic_load pic_load_big">
+            <h1>Загрузить<br>фото или видео</h1>
+            <div class="sizes">
+                <h2>Размер<br>1920x1080px</h2>
+            </div>
+        </div>
+
+        <div class="pic_load pic_load_small">
+            <h1>Загрузить<br>фото или видео</h1>
+            <h2>Размер<br>1080x1080px</h2>
+        </div>
+
+        <div class="back">← Назад</div>
+
+        <div class="enter">войдите</div>
+
+        <div class="button_how_will_the_add_look">
+            Как будет выглядеть реклама  <img src="..\svg\arrow_icon.svg" alt="" class="button_how_will_the_add_look_icon">
+        </div>
+
+        <div class="policy">Нажимая кнопку “Зарегистрироваться” вы соглашаетесь с условиями оферты и политикой конфиденциальности.</div>
+
     </div>
 </body>
+
 </html>
