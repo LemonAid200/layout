@@ -23,7 +23,7 @@ body {
 .columns {
     margin: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -357,4 +357,94 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    color: #767676;
+
+}
+
+.policy a {
+    color: #767676;
+}
+
+.policy:hover a {
+    color: black;
+    text-decoration: none;
+}
+
+.instagram_button {
+    box-sizing: border-box;
+    width: 327px;
+    height: 106px;
+    border-radius: 16px;
+    background-color: var(--grey_button);
+    position: relative;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.instagram_button:hover {
+    background-color: var(--grey_button_hover);
+}
+
+
+.status {
+    box-sizing: border-box;
+
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: 400;
+    width: 93px;
+    height: 28px;
+
+}
+
+.black_status {
+    background-color: var(--black);
+    color: white;
+
+}
+
+.grey_status {
+    background-color: transparent;
+}
+
+.status_text {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.status_ellipse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.instagram_button p {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.instagram_button h3 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    bottom: 8px;
 }
