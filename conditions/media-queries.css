@@ -1,0 +1,12 @@
+@media only screen and (max-width: 992px){
+.columns {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media only screen and (max_width: 500) {
+.columns{
+    grid-template-columns: 1fr;
+}
+    
+}
