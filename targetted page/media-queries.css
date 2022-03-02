@@ -61,6 +61,10 @@
         left: 50%;
         transform: translate(-50%);
     }
+
+    .mobile_only {
+        display: none;
+    }
 }
 
 
@@ -68,6 +72,11 @@
 /* mobiles */
 @media only screen and (max-width: 920px) {
 
+    .wrapper{
+        width: 375px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
     h1 {
         font-size: 32px;
@@ -124,5 +133,15 @@
 
     .element {
         margin-left: 24px;
+    }
+
+
+    .pictures {
+        position: absolute;
+        top: 500px;
+        transform: scale(0.73) translate(-50%);
+        left: 50vw;
+        
+
     }
 }
