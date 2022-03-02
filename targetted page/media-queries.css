@@ -1,0 +1,128 @@
+/* desktop */
+@media only screen and (min-width: 920px) {
+    header {
+        margin: 28px 240px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+
+    /* h1,5 */
+    h4 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    p2 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    p3 {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .header_1 {
+        width: 577px;
+        height: 122px;
+        margin-top: 160px;
+        text-align: center;
+    }
+
+    .header_2 {
+        width: 636px;
+        height: 48px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .element {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+
+/* mobiles */
+@media only screen and (max-width: 920px) {
+
+
+    h1 {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    p3 {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .desktop_only {
+        display: none;
+    }
+
+    header {
+        padding: 28px 24px;
+    }
+
+    .header_1 {
+        width: 322px;
+        height: 112px;
+        margin-top: 80px;
+        text-align: left;
+    }
+
+    .header_2 {
+        width: 307px;
+        height: 96px;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .element {
+        margin-left: 24px;
+    }
+}

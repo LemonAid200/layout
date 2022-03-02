@@ -7,5 +7,31 @@
 @media only screen and (max-width: 800px) {
 .columns{
     grid-template-columns: 1fr;
-}    
+}
+
+h1{
+    size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+h2{
+    size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+h3{
+    size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+p2{
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+p3{
+    size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
 }
