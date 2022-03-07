@@ -108,6 +108,23 @@ header {
     line-height: 31px;
 }
 
+.one_of_three_blocks h2::before{
+    z-index: -1;
+    display: block;
+    content: '';
+    box-shadow: 0 0 9px 5px var(--targetted_background);
+    background-color: var(--targetted_background);
+    position: relative;
+    top: 19px;
+    left: 10px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+
+.element_wrapper{
+    text-align: center;
+}
 
 .element {
     border-radius: 6px;
@@ -127,15 +144,30 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    
+}
+
+.newclass{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .pictures{
+    position: absolute;
     width: 820px;
     height: 620px;
-    position: relative;
-    top: 206px;
+    box-sizing: border-box;
     left: 50%;
     transform: translate(-50%);
+    
+       
+}
+
+.pic_wrapper{
+    position: relative; 
+    
+    width: 100vw;
+    height: 620px;
 }
 
 .facebook {
@@ -176,3 +208,4 @@ header {
     left: 560px;
     bottom: 0px;
 }
+

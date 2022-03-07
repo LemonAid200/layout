@@ -1,5 +1,8 @@
 /* desktop */
 @media only screen and (min-width: 920px) {
+
+   
+
     header {
         margin: 28px 240px;
     }
@@ -29,13 +32,13 @@
         font-weight: 700;
     }
 
-    p2 {
+    .p2 {
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
     }
 
-    p3 {
+    .p3 {
         font-size: 14px;
         line-height: 18px;
         font-weight: 400;
@@ -55,16 +58,80 @@
         margin-bottom: 24px;
         text-align: center;
     }
-
+     
+   
     .element {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
+        box-sizing: border-box;
+        position: static;
+        
+
     }
 
     .mobile_only {
         display: none;
     }
+    
+    .wrapper{
+        width: 100vw;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .three_text_blocks {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 160px;
+        width: 960px;
+        height: 324px;
+        position: relative;
+    }
+
+    .one_of_three_blocks {
+        text-align: center;
+    }
+    
+  
+    .simple_and_fast {
+        position: absolute;
+        width: 385px;
+
+        left: 0px;
+    }
+    
+    .effective {
+        position: absolute;
+        width: 328px;
+
+        right: 0px;
+    }
+    .free {
+        position: absolute;
+        width: 382px;
+        bottom: 0px;
+        margin-left: auto;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .simple_and_fast h2::before{
+        width: 166px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .effective h2::before{
+        width: 139px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .free h2::before{
+        width: 110px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+
+    
 }
 
 
@@ -72,11 +139,7 @@
 /* mobiles */
 @media only screen and (max-width: 920px) {
 
-    .wrapper{
-        width: 375px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
+   
 
     h1 {
         font-size: 32px;
@@ -131,17 +194,43 @@
         margin-bottom: 20px;
     }
 
+    .element_wrapper{
+        text-align: left;
+    }
+
     .element {
         margin-left: 24px;
     }
+ 
+    .three_text_blocks{
+        margin-left: 24px;
+    }
+    .one_of_three_blocks{
+        margin-bottom: 40px;
+        max-width: 307px;
+    }
 
+    .simple_and_fast h2::before{
+        width: 166px;
+       
+    }
+    
+    .effective h2::before{
+        width: 139px;
+        
+    }
+    .free h2::before{
+        width: 110px;
+       
+    }
 
     .pictures {
         position: absolute;
-        top: 500px;
-        transform: scale(0.73) translate(-50%);
-        left: 50vw;
-        
-
+        width: 820px;
+        height: 620px;
+        box-sizing: border-box;
+        left: 50%;
+        transform: translate(-50%) scale(0.8);
     }
+
 }
