@@ -17,7 +17,16 @@ function picHandler(event){
         
         reader.onload = event => {
             const image = event.target.result
-            wrapper.insertAdjacentHTML('afterbegin', `<img src = "${image}" class='image_prevew'></img>`)
+            console.log(file)
+            wrapper.insertAdjacentHTML('afterbegin', 
+            `<div class=peview_wrapper>
+                <div class=delete_pic_button>&times;</div>
+                    <img src = "${image}" class='image_prevew'></img>
+                    <div class="pic_info"><marquee>${file.name}</marquee></div>
+
+            
+            
+            </div>`)
 
         }
         
