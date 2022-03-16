@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(197, 172, 140);
+}
+
+.wrapper{
+    border: 2px dashed rgb(241, 58, 58);
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.pic_input input[type='file']{
+    display: none;
+    
+}
+
+.btn{
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: aqua;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
