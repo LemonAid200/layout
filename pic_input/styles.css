@@ -37,12 +37,20 @@ body{
 .image_prevew{
     height: 150px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .peview_wrapper{
     position: relative;
     overflow: hidden;
     margin: 5px;
+    border-radius: 10px;
+    transition: transform 100ms;
+}
+
+.peview_wrapper:hover{
+    transform: scale(1.05);
+    z-index: 3;
 }
 
 .delete_pic_button{
@@ -51,17 +59,20 @@ body{
     height: 20px;
     background-color: rgb(184, 172, 172);
     z-index: 2;
+    left: 1px;
+    top: 1px;
     position: absolute;
-    top:5px;
-    left: 5px;
-    border-radius: 50%;
+    border-radius: 10px;
     opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 500ms;
 }
+
+
+
+
 
 .peview_wrapper:hover .delete_pic_button{
 
@@ -84,6 +95,6 @@ body{
     transition: all 400ms;
     white-space: nowrap;
 
-    
+    border-radius: 0px 0px 10px 10px;
     
 }
