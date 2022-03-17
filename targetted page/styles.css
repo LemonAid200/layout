@@ -10,29 +10,29 @@
 :root {
     --black: rgba(0, 0, 0, 1);
     --block_border_color: #7B61FF;
-    
+
     --dark_gray: rgba(118, 118, 118, 1);
- 
+
     --grey: rgba(243, 243, 243, 1);
     --grey_button: rgba(243, 243, 243, 1);
     --grey_button_hover: rgba(234, 234, 234, 1);
     --grey_text: rgba(118, 118, 118, 1);
-  
+
     --msg_color: black;
     --msg_box: rgba(243, 243, 243, 1);
-  
+
     --purple: #7B61FF;
     --red: rgba(255, 47, 18, 1);
     --targetted_background: yellow;
-   
+
     --yellow: rgba(226, 255, 18, 1);
     --yellow_button: rgba(226, 255, 18, 1);
     --yellow_button_hover: rgba(219, 248, 18, 1);
-    
+
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
 
 header {
@@ -108,7 +108,7 @@ header {
     line-height: 31px;
 }
 
-.one_of_three_blocks h2::before{
+.one_of_three_blocks h2::before {
     z-index: -1;
     display: block;
     content: '';
@@ -122,7 +122,7 @@ header {
 }
 
 
-.element_wrapper{
+.element_wrapper {
     text-align: center;
 }
 
@@ -144,28 +144,28 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    
+
 }
 
-.newclass{
+.newclass {
     width: 100%;
     overflow-x: hidden;
 }
 
-.pictures{
+.pictures {
     position: absolute;
     width: 820px;
     height: 620px;
     box-sizing: border-box;
     left: 50%;
     transform: translate(-50%);
-    
-       
+
+
 }
 
-.pic_wrapper{
-    position: relative; 
-    
+.pic_wrapper {
+    position: relative;
+
     width: 100vw;
     height: 620px;
 }
@@ -175,37 +175,114 @@ header {
     left: 200px;
     top: 42px;
 }
+
 .girl_with_oranges {
     position: absolute;
     top: 122px;
 }
+
 .dancing {
     position: absolute;
     left: 280px;
     top: 22px;
 }
+
 .eye {
     position: absolute;
     left: 280px;
     bottom: 56px;
 }
+
 .watsup {
     position: absolute;
     left: 480px;
     top: 504px;
 }
+
 .instagram {
     position: absolute;
     left: 560px;
 }
+
 .taxing {
     position: absolute;
     left: 560px;
     top: 80px;
 }
+
 .party {
     position: absolute;
     left: 560px;
     bottom: 0px;
 }
 
+.big_photos_wrapper {}
+
+.header_3 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.header_4 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.small_photos_wrapper {}
+
+
+
+.pic_load {
+    border: 2px dashed #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 12px;
+    position: relative;
+}
+
+.pic_load:hover {
+    background: #F3F3F3;
+}
+
+
+
+.pic_load h1 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.pic_load h2 {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--grey_text);
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.pic_load_big {
+    width: 180px;
+    height: 316px;
+}
+
+.pic_load_small {
+    width: 180px;
+    height: 180px;
+}
