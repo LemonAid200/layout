@@ -2,16 +2,17 @@ body{
     background-color: rgb(197, 172, 140);
     height: 90vh;
     display: flex;
+    transition: all 500ms;
 }
 
 .wrapper{
     border: 2px dashed rgb(241, 58, 58);
-    width: 90vw;
+    min-width: 69vw;
     min-height: 120px;
-    height: fit-content;
     margin: auto;
     position: relative;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
@@ -30,9 +31,70 @@ body{
     bottom: 5px;
     left: 50%;
     transform: translate(-50%);
+    cursor: pointer;
 }
 
 .image_prevew{
-    height: 100px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.peview_wrapper{
+    position: relative;
+    overflow: hidden;
     margin: 5px;
+    border-radius: 10px;
+    transition: transform 100ms;
+}
+
+.peview_wrapper:hover{
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+.delete_pic_button{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: rgb(184, 172, 172);
+    z-index: 2;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+
+
+.peview_wrapper:hover .delete_pic_button{
+
+    opacity: 1;
+}
+
+.peview_wrapper:hover .pic_info{
+    bottom: 4px;
+}
+
+
+
+.pic_info{
+    height: fit-content;
+    position: absolute;
+    background-color: rgba(128, 119, 119, 0.705);
+    text-align: center;
+    width: 100%;
+    bottom: -40px;
+    transition: all 400ms;
+    white-space: nowrap;
+
+    border-radius: 0px 0px 10px 10px;
+    
 }
