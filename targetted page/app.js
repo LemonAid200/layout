@@ -7,7 +7,7 @@ const big_input = document.querySelector('.big_pic_input')
 const small_input = document.querySelector('.small_pic_input')
 const big_photos_wrapper = document.querySelector('.big_photos_wrapper')
 const small_photos_wrapper = document.querySelector('.small_photos_wrapper')
-
+const big_add_button = document.querySelector('.pic_load_big')
 
 big_input.addEventListener('change', picHandler)
 big_photos_wrapper.addEventListener('click', removePicture)
@@ -26,6 +26,7 @@ function removePicture(event) {
         big_pics_array_length -= 1
         const removablePicture = document.querySelector(`[data-name='${event.target.dataset.name}+big']`)
         removablePicture.remove()
+        big_pic_loader.classList.remove('hidden')
     }
 
     if (event.target.classList[1] == 'small_closing') {
@@ -33,6 +34,7 @@ function removePicture(event) {
         console.log(small_pics_array_length)
         const removablePicture = document.querySelector(`[data-name='${event.target.dataset.name}+small']`)
         removablePicture.remove()
+        small_pic_loader.classList.remove('hidden')
     }
 
     giveNumbers()
@@ -68,6 +70,9 @@ function picHandler(event) {
             )
             giveNumbers()
             big_pics_array_length += 1
+            if(big_pics_array_length==5){
+                big_pic_loader.classList.add('hidden')
+            }
         }
         reader.readAsDataURL(file)
     })
@@ -94,7 +99,9 @@ function picHandlerSmall(event) {
             )
             giveNumbers()
             small_pics_array_length += 1
-            console.log(small_pics_array_length)
+            if(small_pics_array_length==5){
+                small_pic_loader.classList.add('hidden')
+            }
         }
         reader.readAsDataURL(file)
     })

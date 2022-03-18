@@ -348,7 +348,9 @@ header {
     position: relative;
 }
 
-
+.hidden{
+    display: none;
+}
 
 
 .closeV {
@@ -359,8 +361,8 @@ header {
     z-index: 2;
     background-color: var(--grey);
     cursor: pointer;
-    top: -10px;
-    right: -10px;
+    top: -20px;
+    right: -20px;
 }
 
 .closeV::after {
