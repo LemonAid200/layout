@@ -224,13 +224,7 @@ header {
     bottom: 0px;
 }
 
-.big_photos_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: fit-content;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
+
 
 .header_3 {
     font-family: 'IBM Plex Sans';
@@ -248,8 +242,16 @@ header {
     line-height: 24px;
 }
 
+.big_photos_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: fit-content;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 .small_photos_wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: fit-content;
     margin-top: 16px;
     margin-bottom: 16px;
