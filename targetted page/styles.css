@@ -184,12 +184,16 @@ header {
 .girl_with_oranges {
     position: absolute;
     top: 122px;
+    width: 260px;
+    height: 462px;
 }
 
 .dancing {
     position: absolute;
     left: 280px;
     top: 22px;
+    width: 260px;
+    height: 462px;
 }
 
 .eye {
@@ -216,12 +220,17 @@ header {
     position: absolute;
     left: 560px;
     top: 80px;
+    width: 260px;
+    height: 260px;
+
 }
 
 .party {
     position: absolute;
     left: 560px;
     bottom: 0px;
+    width: 260px;
+    height: 260px;
 }
 
 
@@ -361,8 +370,8 @@ header {
     z-index: 2;
     background-color: var(--grey);
     cursor: pointer;
-    top: -20px;
-    right: -20px;
+    top: -15px;
+    right: -15px;
 }
 
 .closeV::after {
