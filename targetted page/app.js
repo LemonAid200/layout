@@ -20,7 +20,9 @@ let small_pics_array_length = 0
 
 
 function removePicture(event) {
-    if (!event.target.dataset.name) {return}
+    if (!event.target.dataset.name) {
+        return
+    }
 
     if (event.target.classList[1] == 'big_closing') {
         big_pics_array_length -= 1
@@ -54,10 +56,12 @@ small_pic_loader.addEventListener('click', (event) =>
 function picHandler(event) {
     file_storage = Array.from(event.target.files)
 
-    file_storage.forEach(file => {       
+    file_storage.forEach(file => {
         const reader = new FileReader()
         reader.onload = event => {
-            if (big_pics_array_length == 5) {return}
+            if (big_pics_array_length == 5) {
+                return
+            }
             const image = event.target.result
             big_photos_wrapper.insertAdjacentHTML('afterbegin',
                 ` <div style="position: relative; margin-right: 20px; margin-bottom: 20px;" data-name="${file.name}+big" class = "big_pic_container">
@@ -70,7 +74,7 @@ function picHandler(event) {
             )
             giveNumbers()
             big_pics_array_length += 1
-            if(big_pics_array_length==5){
+            if (big_pics_array_length == 5) {
                 big_pic_loader.classList.add('hidden')
             }
         }
@@ -99,7 +103,7 @@ function picHandlerSmall(event) {
             )
             giveNumbers()
             small_pics_array_length += 1
-            if(small_pics_array_length==5){
+            if (small_pics_array_length == 5) {
                 small_pic_loader.classList.add('hidden')
             }
         }
@@ -109,25 +113,19 @@ function picHandlerSmall(event) {
 
 
 function giveNumbers() {
-    let arrayOfBigPicNumbers = document.querySelectorAll('.big_pic_number')
-    let index = 0
-    arrayOfBigPicNumbers = Array.from(arrayOfBigPicNumbers)
+    const arrayOfBigPicNumbers = Array.from(document.querySelectorAll('.big_pic_number'))
+    let indexB = 0
     arrayOfBigPicNumbers.forEach(number => {
-        index += 1
-        number.innerHTML = index
+        indexB += 1
+        number.innerHTML = indexB
 
     })
 
-    let arrayOfsmallPicNumbers = document.querySelectorAll('.small_pic_number')
+    const arrayOfsmallPicNumbers = Array.from(document.querySelectorAll('.small_pic_number'))
     let indexS = 0
-    arrayOfsmallPicNumbers = Array.from(arrayOfsmallPicNumbers)
     arrayOfsmallPicNumbers.forEach(number => {
         indexS += 1
         number.innerHTML = indexS
 
     })
 }
-
-
-
-
